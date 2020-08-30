@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>{{ title }}</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 ">
+                    {{ guide.title }}
+                </h2>
+                <h3 class="align-center pb-3">
+                    {{ guide.subheading }}
+                    {{ guide.username }}
+                </h3>
+
+            </div>
+        </div>
+        <div class="row justify-content-center">
+          {{ guide.article }}
+        </div>
+    </div>
+{% endblock %}
